@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.logo-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-image: url(./images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+  padding: 20vh 0;
+  align-items: center;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 60%;
+  max-width: 400px;
+  min-width: 100px;
+  height: auto;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.photo-credit a {
+  color: white;
+}
+
+main {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.description {
+  margin-bottom: 2.5vh;
+  font-size: 1.1rem;
+}
+
+h1 {
+  margin-bottom: 1.5vh;
+}
+
+.description-p {
+  margin-bottom: 1vh;
+}
+
+form {
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65%;
+  max-width: 1000px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex-basis: 48%;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  max-width: 100%;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: teal;
+  box-shadow: 0 0 3px rgb(11, 75, 59);
+}
+
+input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+.button-login-container {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.btn-submit {
+  background-color: #596d48;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 1vh;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #4a5d3f;
+}
+
+.login-link a {
+  text-decoration: none;
+  color: #596d48;
+}
